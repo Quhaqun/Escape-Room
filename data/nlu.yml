@@ -1,0 +1,93 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: look around
+  examples: |
+    - Can you tell me what's in the [room](object)?
+    - What does the environment look like?
+    - Can you describe the surroundings?
+    - Is there anything interesting nearby?
+    - I need to get a sense of my surroundings.
+    - Can you give me an overview of the area?
+    - What do we have in this [room](object)?
+    - Is there anything interesting nearby that could help us escape?
+    - I need to get a sense of my surroundings.
+    - Can you give me an overview of the area?
+    - Do you notice anything out of place in the [room](object)?
+    - Is there anything hidden that we should be looking for?
+    - Look around the room.
+    - Look around the Cell.
+    - Look around.
+    - Look where You are.
+    - Where are you?
+    - Where i am?
+
+- intent: look at
+  examples: |
+    - look at the [toilet](object)
+    - look at the [sink](object)
+    - look at the [lamp](object)
+    - look at the [bed](object)
+    - inspect the [toilet](object)
+    - inspect the [sink](object)
+    - inspect the [lamp](object)
+    - inspect the [bed](object)
+    - Can you look at the [toilet](object)?
+    - Can you look at the [sink](object)?
+    - Can you look at the [lamp](object)?
+    - Can you look at the [bed](object)?
+
+- intent: search
+  examples: |
+    - Can you help me search for the key in the room?
+    - I need to search for a document in the filing cabinet.
+    - Can you help me search the box?
+    - Can you search under the bed?
+    - Can you help me search for any clues?
+    - I need to search for a key to unlock the next room.
+    - Is there a hidden object in the room that we need to find?
+    - Can you help me search for a password to unlock the safe?
+    - Is there a pattern or code hidden in the room that we need to discover?
+    - I'm looking for a specific item that could help us escape, can you assist me?
+
+- intent: pick up and inspect
+  examples: |
+    - Can you pick up that book?
+    - Can I pick up that key?
+    - I need to pick up the flashlight to look for clues in the dark.
+    - Can I pick up the paper on the floor?
+    - I want to pick up the crowbar to pry open the door.
+    - Can I pick up the book to look for hidden messages?
+    - I'm going to pick up the hammer to break open the lock.
+    - Pick up that screwdriver?
+    - Pick up the screwdriver?
+    - Pick up that screw?
+
+- intent: unscrew
+  examples: |
+    - Unscrew the toilet from the floor.
+    - Use the screwdriver to remove the screws holding the toilet in place.
+    - Take apart the toilet by unscrewing the bolts.
+    - Unscrew the toilet and move it aside.
+    - Remove the screws that are keeping the toilet attached to the wall.
+    - Use the wrench to unscrew the toilet and free it from its mounting.
+    - Unscrew the toilet and see if there's anything hidden behind it.
+    - Take the toilet apart by unscrewing all of the connections.
+    - Use the pliers to unscrew the bolts holding the toilet down.
+    - Unscrew the toilet carefully so as not to damage it.

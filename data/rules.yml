@@ -1,0 +1,28 @@
+version: "3.1"
+
+rules:
+
+#- rule: simple greet rule
+#  steps:
+#  - intent: greet
+#  - action: action_start
+
+- rule: Look around the cell
+  steps:
+  - intent: look around
+  - action: utter_look_around
+
+- rule: Look at something
+  steps:
+  - intent: look at
+  - action: action_look
+
+- rule: picking up screwdriver
+  steps:
+    - intent: pick up and inspect
+    - action: action_pickup
+
+- rule: unscrew  the toilet
+  steps:
+  - intent: unscrew
+  - action: action_unscrew

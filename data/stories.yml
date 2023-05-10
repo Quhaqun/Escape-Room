@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: look around
+  - action: utter_look_around
+  - intent: look at
+  - action: action_look
+  - intent: pick up and inspect
+  - action: action_pickup
+  - intent: unscrew
+  - action: action_unscrew
+
+- story: sad path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: look around
+  - action:  utter_look_around
+  - intent: look at
+  - action: action_look
+
+

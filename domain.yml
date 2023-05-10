@@ -1,0 +1,50 @@
+version: "3.1"
+
+intents:
+  - greet
+  - look around
+  - look at
+  - search
+  - pick up and inspect
+  - unscrew
+
+
+responses:
+  utter_greet:
+  - text: "Greetings, esteemed agent!
+           You've been handpicked to join the ranks of our elite team at Platinum Breakout Industries Inc.,
+           where our unparalleled expertise lies in orchestrating prison escapes for the world's most valuable inmates.
+           Your reputation for cunning and resourcefulness precedes you, and we are confident that you'll make a significant contribution to our cause.
+           Your first assignment involves assisting a high-profile client, James The Mastermind Maddox, who finds himself incarcerated in the infamous
+           Blackstone Maximum Security Prison. A former ally of Platinum Breakout Industries Inc., James possesses invaluable information that could change
+           the course of our operations. Unfortunately, his intricate plans went awry, and he's now serving a life sentence.
+           Time is of the essence. We've managed to smuggle a state-of-the-art communication device to James, enabling you to 
+           guide him remotely through a perilous series of escape room-style puzzles. These challenges have been specifically 
+           designed to test the mettle of even the most seasoned escape artists.
+           Prepare yourself for a race against the clock. You must navigate James through the bowels of Blackstone, overcoming treacherous
+           obstacles and solving enigmatic riddles, all while evading the ever-watchful eyes of the prison guards. The fate of our client and our
+           company's future endeavors rests on your capable shoulders.
+           Remember, agent, failure is not an option. Good luck, and may fortune favor the bold!"
+
+  utter_look_around:
+  - text: "I am in a prison cell and I see a toilet, a bed, a sink and a lamp."
+
+entities:
+  - object
+
+actions:
+  - action_start
+  - action_look
+  - action_pickup
+  - action_unscrew
+
+slots:
+  screwdriver:
+    type: bool
+    initial_value: false
+    mappings:
+    - type: custom
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
